@@ -166,3 +166,22 @@ Here, we tell supertest to send a `GET` request to the `/` path.
 
 And finally, here we make sure that the response status is `200` and
 the body is exacly `Hello World!`.
+
+Supertest is very helpful library, it allows us to verify different behaviours of our
+application like:
+
+The endpoint should return a 500 error:
+
+```javascript
+.expect(500)
+```
+
+The endpoint should return a object:
+
+```javascript
+.expect(200, {
+  lorem: 'ipsum'
+})
+```
+
+And many others. You can know more about supertest [here](https://www.npmjs.com/package/supertest).
