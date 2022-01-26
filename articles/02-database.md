@@ -30,6 +30,8 @@ await db.query(
 )
 ```
 
+Note: `Client` uses the default configuration for connecting.
+
 We also need to use the json body parser, so we can send json objects
 to our application:
 
