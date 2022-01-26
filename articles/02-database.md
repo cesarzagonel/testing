@@ -165,7 +165,7 @@ afterEach(async () => {
 })
 ```
 
-Quick and simple! Now, if we delete and recreate out database, we should be able
+Quick and simple! Now, if we delete and recreate our database, we should be able
 to run out test suite multiple times, without issues:
 
 ```console
