@@ -134,7 +134,7 @@ $ npx jest
 ```
 
 The problem here is that the db changes are persisted between each test run.
-Ideally, we want to have totally isolation between tests. This means that
+Ideally, we want to have total isolation between tests. This means that
 each test run, should receive a fresh copy of the database.
 We can solve this issue in a couple of manners.
 
