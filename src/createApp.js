@@ -1,6 +1,7 @@
 const bodyParser = require('body-parser')
 const express = require('express')
 const { Client } = require('pg')
+const axios = require('axios')
 
 module.exports = async () => {
   const app = express()
@@ -24,6 +25,17 @@ module.exports = async () => {
     )
 
     res.send(pet)
+  })
+
+  app.get('/characters/:id', async (req, res) => {
+    const { id } = req.params
+
+    try {
+      const result = await axios.get(`https://swapi.dev/api/people/${id}`)
+      res.send(result.data)
+    } catch(e) {
+      res.status(500).send('Server error.')
+    }
   })
 
   return {
