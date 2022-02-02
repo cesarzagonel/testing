@@ -1,4 +1,4 @@
-We are going to start with this pretty basic `hello world` application:
+As example, we are going to start with this basic `hello world` application:
 
 index.js:
 
