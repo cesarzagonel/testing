@@ -1,4 +1,4 @@
-On the last part of this series of articles, we were introduced to the concept of _mocking_.
+On the last part of this series, we were introduced to the concept of _mocking_.
 It turns out that we can also mock javascript functions as we are going to see.
 Let's say that we have function _A_ that happens to call function _B_ but we don't want
 to actually call function _B_ while testing _A_. How can we get around this? Mocking is
